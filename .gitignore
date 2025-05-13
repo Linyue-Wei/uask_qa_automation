@@ -1,0 +1,79 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.ENV/
+
+# VSCode settings
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Pytest cache
+.pytest_cache/
+.cache/
+
+# Playwright stuff
+playwright-report/
+test-results/
+*.zip
+*.webm
+*.png
+*.mp4
+*.json
+*.trace
+
+# Allure results
+allure-results/
+allure-report/
+
+# Coverage reports
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.cache/
+.tox/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Logs and temp
+*.log
+*.tmp
+*.swp
+*.swo
+
+# System specific
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Compiled binaries (e.g. C extensions)
+build/
+dist/
+*.egg-info/
+*.so
+
+
+# local session info
+storage/

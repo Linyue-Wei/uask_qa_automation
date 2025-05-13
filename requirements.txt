@@ -1,0 +1,16 @@
+allure-pytest==2.14.2
+allure-python-commons==2.14.2
+attrs==25.3.0
+certifi==2025.4.26
+charset-normalizer==3.4.2
+greenlet==3.2.2
+idna==3.10
+iniconfig==2.1.0
+packaging==25.0
+playwright==1.52.0
+pluggy==1.5.0
+pyee==13.0.0
+pytest==8.3.5
+requests==2.32.3
+typing_extensions==4.13.2
+urllib3==2.4.0
