@@ -129,6 +129,12 @@ playwright show-trace report/traces/test_xxxx.zip
 Since only the production web UI is available at this time, the test_ai suite relies on UI-driven validation. If an API endpoint becomes accessible, the tests should be updated to send direct prompts to the LLM for more scalable, data-driven validation.
 
 
+## Sample Test Result
+
+Below is a sample test case result visualized:
+
+![Sample Test Result via Allure](assets/sample_allure_result.jpg)
+![Sample Test Result via Playwright](assets/sample_playwright_result.jpg)
 
 
 
