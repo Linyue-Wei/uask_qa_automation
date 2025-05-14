@@ -32,7 +32,7 @@ This framework tests UI behavior, AI response quality, and security handling acr
 ```
 uask_qa_automation/
 ├── config/                    # Environment & feature flags
-│   └── config.py              # Base URLs, timeouts, headless, storage settings
+│   └── config.py              # Language, Base URLs, timeouts, headless, storage settings
 ├── pages/                     # Page Object Models
 │   └── chatbot_page.py
 ├── data/                      # Data-driven test inputs
