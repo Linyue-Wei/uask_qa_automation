@@ -56,7 +56,7 @@ uask_qa_automation/
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 1. **Python 3.10+**, pip
 2. **Playwright** browsers
