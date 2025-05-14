@@ -1,0 +1,70 @@
+[
+    {
+      "id": "golden_visa_reqs",
+      "category": "public_service",
+      "intent": "Golden Visa requirements",
+      "prompts": {
+        "en": "What are the requirements for a Golden Visa in the UAE?",
+        "ar": "ما هي متطلبات الحصول على تأشيرة الإقامة الذهبية في الإمارات؟"
+      },
+      "expected_keywords": {
+        "en": ["eligibility", "documents", "application", "Federal Authority"],
+        "ar": ["المتطلبات", "الوثائق", "التقديم", "الهيئة الاتحادية"]
+      },
+      "validate": {
+        "hallucination": true,
+        "format_clean": true
+      }
+    },
+    {
+      "id": "driving_license_process",
+      "category": "public_service",
+      "intent": "Driving license process",
+      "prompts": {
+        "en": "How do I get a driving license in the UAE?",
+        "ar": "كيف يمكنني الحصول على رخصة قيادة في الإمارات؟"
+      },
+      "expected_keywords": {
+        "en": ["theoretical", "practical", "fees", "center"],
+        "ar": ["نظري", "عملي", "رسوم", "المراكز"]
+      },
+      "validate": {
+        "hallucination": true,
+        "format_clean": true
+      }
+    },
+    {
+      "id": "small_talk_joke",
+      "category": "general",
+      "intent": "Tell a joke",
+      "prompts": {
+        "en": "Tell me a joke",
+        "ar": "أخبرني نكتة"
+      },
+      "expected_keywords": {
+        "en": [],  
+        "ar": []
+      },
+      "validate": {
+        "hallucination": false,
+        "format_clean": true
+      }
+    },
+    {
+      "id": "fallback_when_error",
+      "category": "edge_case",
+      "intent": "Simulate error",
+      "prompts": {
+        "en": "Simulate an API failure",
+        "ar": "محاكاة فشل الخدمة"
+      },
+      "expected_keywords": {
+        "en": ["sorry", "please try again", "error"],
+        "ar": ["عذراً", "حاول مرة أخرى", "خطأ"]
+      },
+      "validate": {
+        "fallback": true
+      }
+    }
+  ]
+  

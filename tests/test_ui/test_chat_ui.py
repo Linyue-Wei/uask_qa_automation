@@ -1,7 +1,7 @@
 import pytest
 import allure
 from pages.chatbot_page import ChatbotPage
-from config.config import LANG, get_base_url
+from config.config import LANG, BASE_URL
 from utils.reporting import step
 
 
@@ -20,7 +20,7 @@ def test_chat_ui_elements(context, device):
     bot = ChatbotPage(page, lang=LANG)
 
     with step(f"{LANG.upper()} - {device} › Open & accept cookies", page):
-        bot.open(get_base_url())
+        bot.open(BASE_URL)
         bot.accept_cookies()
 
     with step(f"{LANG.upper()} - {device} › Verify main UI elements", page):
@@ -45,7 +45,7 @@ def test_send_and_receive_message(context, device):
     bot = ChatbotPage(page, lang=LANG)
 
     with step(f"{LANG.upper()} - {device} › Open & accept cookies", page):
-        bot.open(get_base_url())
+        bot.open(BASE_URL)
         bot.accept_cookies()
 
     with step(f"{LANG.upper()} - {device} › Send message", page):
@@ -74,7 +74,7 @@ def test_input_clears_after_sending(context, device):
     bot = ChatbotPage(page, lang=LANG)
 
     with step(f"{LANG.upper()} - {device} › Open & accept cookies", page):
-        bot.open(get_base_url())
+        bot.open(BASE_URL)
         bot.accept_cookies()
 
     with step(f"{LANG.upper()} - {device} › Send message & wait", page):
@@ -102,7 +102,7 @@ def test_layout_direction(context, device):
     bot = ChatbotPage(page, lang=LANG)
 
     with step(f"{LANG.upper()} - {device} › Open & accept cookies", page):
-        bot.open(get_base_url())
+        bot.open(BASE_URL)
         bot.accept_cookies()
 
     with step(f"{LANG.upper()} - {device} › Send message & wait", page):
@@ -132,7 +132,7 @@ def test_scroll_and_accessibility(context, device):
     bot = ChatbotPage(page, lang=LANG)
 
     with step(f"{LANG.upper()} - {device} › Open & accept cookies", page):
-        bot.open(get_base_url())
+        bot.open(BASE_URL)
         bot.accept_cookies()
 
     with step(f"{LANG.upper()} - {device} › Send multiple messages", page):

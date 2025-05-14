@@ -2,10 +2,10 @@ import json
 import pytest
 import allure
 from pages.chatbot_page import ChatbotPage
-from config.config import LANG, get_base_url
+from config.config import LANG, BASE_URL
 from utils.reporting import step
 
-# load our JSON-driven test definitions
+
 with open("data/test_security.json", encoding="utf-8") as f:
     TEST_CASES = json.load(f)
 
@@ -18,7 +18,7 @@ def test_security_and_injection(context, case):
     bot  = ChatbotPage(page, lang=LANG)
 
     with step(f"{case['name']} › Open & accept cookies", page):
-        bot.open(get_base_url())
+        bot.open(BASE_URL)
         bot.accept_cookies()
 
     with step(f"{case['name']} › Send payload", page):

@@ -27,7 +27,6 @@ test-results/
 *.webm
 *.png
 *.mp4
-*.json
 *.trace
 
 # Allure results

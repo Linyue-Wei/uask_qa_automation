@@ -1,6 +1,6 @@
 import json, re, pytest, allure
 from pages.chatbot_page import ChatbotPage
-from config.config import LANG, get_base_url
+from config.config import LANG, BASE_URL
 from utils.reporting import step
 
 with open("data/test_ai.json", encoding="utf-8") as f:
@@ -18,7 +18,7 @@ def test_ai_response_validation(context, case):
     bot  = ChatbotPage(page, lang=LANG)
 
     with step("Open & accept cookies", page):
-        bot.open(get_base_url())
+        bot.open(BASE_URL)
         bot.accept_cookies()
 
     prompt = case["prompts"][LANG]
@@ -57,7 +57,7 @@ def test_ai_response_validation(context, case):
     with step(f"Cross-lang check: send {other_prompt}", page):
         page2 = context.new_page()
         bot2   = ChatbotPage(page2, lang=other)
-        bot2.open(get_base_url()); bot2.accept_cookies()
+        bot2.open(BASE_URL); bot2.accept_cookies()
         bot2.send_message(other_prompt); bot2.wait_for_response()
         other_reply = bot2.get_last_bot_message().lower()
         exp_kws = case["expected_keywords"][other]

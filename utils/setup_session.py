@@ -1,6 +1,6 @@
 import os
 from playwright.sync_api import sync_playwright
-from config.config import STORAGE_STATE_PATH, get_base_url
+from config.config import STORAGE_STATE_PATH, BASE_URL
 
 USER_DATA_DIR = os.path.dirname(STORAGE_STATE_PATH) or "storage/session"
 
@@ -17,7 +17,7 @@ def main():
             timezone_id="Asia/Dubai"
         )
         page = context.new_page()
-        page.goto(get_base_url())
+        page.goto(BASE_URL)
 
         print("\nPlease solve any CAPTCHA manually in the opened browser.")
         input("Once complete, press ENTER to save session and exit...\n")
