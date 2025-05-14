@@ -11,7 +11,7 @@ This framework tests UI behavior, AI response quality, and security handling acr
 ### Framework
 - **Python + Pytest + Playwright** for robust browser automation
 - **Allure** for structured reporting
-- **Data-driven** prompts and multi-language support
+- **Data-driven** prompts and multi-language support, you can config test language in config/config.py 
 
 ### Coverage
 - **UI Behavior**: widget visibility, messaging, layout, accessibility
