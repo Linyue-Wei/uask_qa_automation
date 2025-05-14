@@ -74,5 +74,8 @@ dist/
 *.so
 
 
-# local session info
-storage/
+report/*
+!report/.gitkeep
+
+storage/*
+!storage/.gitkeep

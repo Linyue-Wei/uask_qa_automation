@@ -1,5 +1,3 @@
-# pages/chatbot_page.py
-
 import random
 import time
 from playwright.sync_api import Page, TimeoutError as PlaywrightTO, Locator
