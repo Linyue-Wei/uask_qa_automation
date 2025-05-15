@@ -104,7 +104,7 @@ class ChatbotPage:
     def accept_cookies(self):
         sel = self.sel["accept_btn"]
         self.logger.debug("Attempting to accept cookies")
-        if self._wait_visible(sel, "Accept cookies"):
+        if self._wait_visible(sel, "Accept cookies", 100):
             self.page.click(sel)
 
     def send_message(self, msg: str = None):

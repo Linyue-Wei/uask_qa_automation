@@ -24,7 +24,7 @@ def browser():
     pw.stop()
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="module")
 def context(browser, request):
     """
     Create a fresh context per test (with a single window),
